@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah Morgan</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <h1 class="brand">Sarah <span>Morgan</span></h1>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul id="menu" class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile nav toggle -->
+      <button
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="menu"
+        aria-label="Toggle navigation"
+      >
+        ☰ Menu
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-labelledby="tagline">
+    <div class="wrap hero-inner">
+      <div class="hero-text-left">
+        <h2 id="tagline-left">Learning the tech before earning the badge!</h2>
+        <p>
+          Just a student building the foundation for a career in digital
+          investigation. Take a look at what I've been working on.
+        </p>
+        <a class="btn-hero" href="#projects">See work!</a>
+      </div>
+
+      <!-- Flexible image -->
+      <figure class="hero-figure">
+        <img src="hero.png" alt="Picture of Sarah Morgan" />
+      </figure>
+
+      <div class="hero-text-right">
+        <h2>"What does her experience look like?"</h2>
+        <p>It looks like I'll sleep when I'm dead.</p>
+        <!-- Placeholder resume link -->
+        <a
+          class="btn-resume"
+          href="https://docs.google.com/document/d/1uoTaRoYuSbPfTeUp6lbRJ20odMEw-I1OQtfAFGiae6I/edit?usp=sharing"
+        >
+          Resume Here
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+    <!-- About -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="wrap">
+        <h2 id="about-title">About Me</h2>
+        <p>
+          I’m Sarah, a full-time Computer Science college student, working
+          full-time and looking for opportunities to learn more about my aspiring
+          career field.
+        </p>
+        <p class="activities-list" aria-label="activities">
+          <span><strong>Academy Prep</strong> Weightlifting &amp; Running</span>
+          <span><strong>Coding</strong> Classes &amp; Personal Projects</span>
+          <span><strong>Networking</strong> Ride-Alongs &amp; Internships</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects (Grid) -->
+    <section id="projects" class="section projects" aria-labelledby="projects-title">
+      <div class="wrap">
+        <h2 id="projects-title">Projects</h2>
+
+        <div class="cards">
+          <article class="card">
+            <img src="phoneBook.png" alt="Thumbnail of PhoneBook" />
+            <div class="card-body">
+              <h3>Phone Book Application</h3>
+              <p></p>
+              <a class="card-link" href="#" aria-label="View Phone Book project">View project</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="chaoticWeb.png" alt="Webpage Thumbnail" />
+            <div class="card-body">
+              <h3>Chaotic Beginner HTML Webpage</h3>
+              <p></p>
+              <a class="card-link" href="#" aria-label="View Chaotic Beginner HTML Webpage project">View project</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="yearlyAcaPlan.png" alt="Academic Planner Thumbnail" />
+            <div class="card-body">
+              <h3>Academic Year Planner Application</h3>
+              <p></p>
+              <a class="card-link" href="#" aria-label="View Academic Year Planner project">View project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <h2 id="contact-title">Get in touch with me!</h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Why are you reaching out?"
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Sarah Morgan. All rights reserved.</small>
+      <ul class="social">
+        <li>
+          <a
+            href="https://www.linkedin.com/in/sarah-morgan-a1048928a"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Small helper script for mobile nav + auto year -->
+  <script>
+    (function () {
+      const btn = document.querySelector('.nav-toggle');
+      const menu = document.getElementById('menu');
+
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('open');
+          btn.setAttribute(
+            'aria-expanded',
+            String(menu.classList.contains('open'))
+          );
+        });
+      }
+
+      const y = document.getElementById('year');
+      if (y) y.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

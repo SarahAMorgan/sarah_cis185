@@ -1,0 +1,63 @@
+/* Fonts and colors */
+:root {
+  --ink: #1E2019;
+  --muted: #6B6E6A;
+  --accent: #ccbdb1;
+  --accent-ink: #2B2622;
+}
+
+/* Body text and base styling */
+body {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background-color: #F3EFEA;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--ink);
+}
+
+/* Navbar brand styling */
+.navbar-brand span {
+  font-weight: 400;
+  color: var(--accent-ink);
+}
+
+/* Hero image tweak */
+.card-img-top,
+.img-fluid {
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Buttons: subtle color personality */
+.btn-outline-dark {
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.btn-outline-dark:hover {
+  background-color: var(--accent);
+  color: var(--accent-ink);
+}
+.btn-dark {
+  background-color: var(--accent-ink);
+  border: none;
+}
+.btn-dark:hover {
+  background-color: var(--accent);
+  color: var(--accent-ink);
+}
+
+/* Section spacing refinement */
+section {
+  padding-block: 4rem;
+}
+
+/* Footer text */
+footer {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
