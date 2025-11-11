@@ -1,0 +1,83 @@
+<!-----------------------------------------
+Assignment 5: Halloween Party Invitation
+Name: Sarah Morgan
+Date: Nov 6th, 2025 (way too late, I have been very sick. so sorry...)
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're Invited! 🎃</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <h1> Halloween RSVP ✩₊˚.⋆🕸️⋆⁺₊✧ </h1>
+
+    <form id="registrationForm">
+      <fieldset>
+        <legend>Guest Info</legend>
+
+        <label for="name">Who is RSVP-ing?</label>
+        <input id="name" type="text" placeholder="Wednesday Addams"/>
+
+        <label for="guests">Bringing A Date (or a few)?</label>
+        <input id="guests" type="number" min="0" max="10" value="0"/>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="yourEmail@example.com"/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Party Questions!</legend>
+
+        <label for="color">What's your fav SPOOKY color?</label>
+        <input id="color" type="color" value="#ff6600"/>
+
+        <label for="candy">Sugar Coma of Choice?</label>
+        <select id="candy" name="candy">
+          <option value="">Choose one...</option>
+          <option value="chocolate">Chocolate🍫</option>
+          <option value="gummy">Gummies🍬</option>
+          <option value="sour">SOUR💥</option>
+        </select>
+
+        <label for="scarymovie">What's your FAV scary movie?</label>
+        <textarea id="scarymovie" rows="1" cols="20" placeholder="Scream Ⅳ is mine!"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Choose a Costume to Wear!</legend>
+        <input type="radio" id="vampire" name="costume" value="vampire" for="vampire">Vamp 🧛</label>
+        <input type="radio" id="witch" name="costume" value="witch" for="witch">Witch 🧙</label>
+        <input type="radio" id="man" name="costume" value="man" for="man">Michael from 'The Office' 💼</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What is Your Favorite Part of Halloween??</legend>
+
+        <input type="checkbox" id="diabetes" name="diabetes" value="diabetes" for="diabetes">Diabetes 🍭</label>
+        <input type="checkbox" id="children" name="children" value="children" for="children">Scaring Children 👶🏻</label>
+        <input type="checkbox" id="money" name="money" value="money" for="money">Spending $50 on a Costume 💵</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Wrapping Up</legend>
+
+        <label class="termsline">
+          <input id="terms" type="checkbox"/>
+          I agree to showing up in an awesome Michael costume! 👻
+        </label>
+      </fieldset>
+
+      <button type="reset">Clear</button>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #111;
+  color: #f9f9f9;
+}
+.card {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 22px;
+  background: #141414;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+h1 {
+  color: orange;
+  text-align: center;
+  margin-top: 0;
+}
+fieldset {
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 14px;
+}
+legend {
+  padding: 0 6px;
+  color: orange;
+  font-weight: 600;
+}
+form {
+  display: grid;
+  gap: 18px;
+}
+label {
+  display: block;
+  gap: 12px;
+  margin-top: 8px;
+}
+button {
+  background: orange;
+  border: none;
+  margin-top: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+button:hover {
+  filter: brightness(2);
+}
