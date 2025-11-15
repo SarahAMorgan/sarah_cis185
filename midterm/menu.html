@@ -1,0 +1,88 @@
+<!-----------------------------------------
+Midterm Project - Menu Page
+Name: Sarah Morgan
+Date: Nov 12th, 2025
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/brandLogo.png" style="height:150px; margin-right: 10px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="./gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CURRENT MENU -->
+   <div class="container my-5">
+    <div class="row text-center">
+
+      <div class="col-md-4">
+        <h3>Blended <strong>Salted Honey</strong> & <strong>Candied Pumpkin</strong></h3>
+        <img src="./images/32coffees.png" class="img-fluid rounded" alt="Blended Specialty Coffees">
+      </div>
+
+      <div class="col-md-4">
+        <h3>NOVEMBER's SPECIALS</h3>
+        <img src="./images/novMenu.png" class="img-fluid rounded" alt="Specials Menu">
+      </div>
+
+      <div class="col-md-4">
+        <h3>Cinnamon Pumpkin Bars</h3>
+        <img src="./images/pumpkBars2.png" class="img-fluid rounded" alt="Pumpkin Bars">
+      </div>
+    </div>
+   </div>
+
+  <!-- FORM FOR SURVEY  -->
+   <div class="form-card text-center">
+    <h1> Help us craft December's menu! </h1>
+
+    <form id="specials-survey">
+        <label for="goody">What's your favorite holiday goody?</label>
+        <input id="goody" type="text" placeholder="Cinnamon Rolls"/>
+
+        <label for="color">Favorite color of Lotus Energy?</label>
+        <input id="color" type="color" value="#ff6600"/>
+
+        <label for="flavor">Would you rather a coffee with <strong>caramel</strong> or <strong>chocolate</strong>?</label>
+        <select id="flavor" name="candy">
+          <option value="">Choose one...</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="gummy">Caramel</option>
+        </select>
+
+        <label for="idea">Flavor combo ideas for next month?</label>
+        <textarea id="idea" rows="1" cols="30" placeholder="White Lotus, Strawberry & Peach"></textarea>
+
+      <button type="reset">Clear</button>
+      <button type="submit">SEND</button>
+    </form>
+  </div>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
